@@ -1,0 +1,30 @@
+  .Personalknowledge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    min-height: 50vh; /* Ensures the container takes the full height of the viewport */
+    background-color: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .personalknowledge-container h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .personalknowledge-container p {
+    color: #555;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+   #personalknowledge span{
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+  
+  }

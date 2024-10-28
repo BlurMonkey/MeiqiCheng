@@ -1,0 +1,88 @@
+
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Set default font family */
+  color: #333; /* Set default text color */
+  line-height: 1.6; /* Set line height for better readability */
+  background-color: #f4f4f4; /* Set background color to light gray */
+  font-size: 18px; /* Set a default font-size */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Set link color to blue */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.App{
+  margin: 0 auto;
+  padding:0%;
+}
+
+/* Header Styles */
+.header {
+  background-color: #87aece; /* Set header background color to dark */
+  padding: 1rem; /* Add padding around the header */
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  line-height: 1rem;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out navbar items */
+  align-items: center; /* Vertically center items */ 
+}
+
+
+.logo-container {
+  margin: 0 1rem;
+  display: flex; /* Use flexbox to align logos */
+  align-items: center; /* Center logos vertically */
+}
+
+.logo {
+  height: 80px; /* Set height of logo */
+  margin-right: 1rem; /* Add space between logos */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullets from the nav list */
+  display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+  margin-right: 2rem; /* Space between each link */
+}
+
+.nav-links a {
+  color: #fff; /* Set link color to white */
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+  color: #3e4c50; /* Change link color on hover */
+}
+
+.container {
+  min-width: 800px;
+  margin: 2rem; /* Center the container */
+}
+
+
+/* Footer Styles */
+.footer {
+  text-align: center; /* Center the text in the footer */
+  padding: 2rem; /* Add padding to the footer */
+  background-color: #011b4f; /* Set footer background to dark gray */
+  color: white; /* Set text color to white */
+  margin: auto 0; /* Add margin on top of footer */
+}
+
+.footer p {
+  margin: 0; /* Remove default paragraph margin in the footer */
+}
+

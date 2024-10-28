@@ -1,0 +1,91 @@
+.container {
+    min-width: 800px;
+    margin: 0; /* Center the container */
+  }
+
+/* Hero Section */
+.hero {
+    display: flex; /* Align items in a row */
+    background-color: #225b8a; /* Set hero background color to dark teal */
+    color: white; /* Set text color to white */
+    padding: 1rem 0; /* Add vertical padding */
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0; /* Add vertical padding */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Adjust based on your layout needs */
+    width: 50%; /* Use full width of the container */
+    margin: 2px auto; /* Center the content */
+  }
+  
+  .profile-photo {
+    height: 260px; /* Adjust based on your preference */
+    width: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-right: 2rem; /* Space between image and text */
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem; /* Large font size for heading */
+    margin: 0.5rem 0; /* Space below the heading */
+  }
+  
+  .hero span {
+    font-size: 1.15rem; /* Font size for paragraph */
+    font-weight: 500; /* Light font weight */
+  
+  }
+  
+  /* Section Styles */
+  .section {
+    margin: 2rem 0; /* Add margin above and below sections */
+    padding: 1rem 2rem; /* Add padding inside sections */
+    background-color: white; /* Set section background color to white */
+    border-radius: 8px; /* Round the corners of the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow to sections */
+  }
+  
+  .about p {
+    font-size: 1.1rem; /* Set font size for paragraphs in the about section */
+    line-height: 1.8; /* Increase line height for readability */
+    text-align: justify;
+  }
+
+  /* About_me*/
+  #about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; /* Ensures the container takes the full height of the viewport */
+    background-color: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    padding: 0 2rem ;
+    text-align: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  #about-me  h2{
+    color: #333;
+    text-align: center;
+
+
+  .about-me-container p {
+      color: #555;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+
+  }
+  #about-me span{
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+  }
+
+
