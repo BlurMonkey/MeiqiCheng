@@ -1,0 +1,80 @@
+@startuml
+
+class App {
+    +Header : Header
+    +Main : Main
+    +Footer : Footer
+}
+
+class Header {
+    +NavBar : NavBar
+}
+
+class NavBar {
+    +Logo : Image
+    +LAbout : Link
+    +LBlog : Link
+    +LEducation : Link
+    +LProject : Link
+    +LGallery : Link
+    +LVideoGallery : Link
+    +LContact : Link
+}
+
+class Main {
+    +Routes : Routes
+}
+
+class Routes {
+    +RAbout : Route
+    +RBlog : Route
+    +REducation : Route
+    +RProject : Route
+    +RGallery : Route
+    +RVideoGallery : Route
+    +RContact : Route
+}
+
+class Blog {
+    +PhotoLinks : PhotoLinks
+}
+
+class PhotoLinks {
+    +LBizShot : Link
+    +LAestheticShot : Link
+    +LReflectsShot : Link
+}
+
+class Footer {
+    +Copyright : String
+}
+
+App --> Header
+App --> Main
+App --> Footer
+
+Header --> NavBar
+NavBar --> "About Page" : LAbout
+NavBar --> "Blog Page" : LBlog
+NavBar --> "Education Page" : LEducation
+NavBar --> "Project Page" : LProject
+NavBar --> "Gallery Page" : LGallery
+NavBar --> "VideoGallery Page" : LVideoGallery
+NavBar --> "Contact Page" : LContact
+
+Main --> Routes
+Routes --> RAbout : "Route to About"
+Routes --> RBlog : "Route to Blog"
+Routes --> REducation : "Route to Education"
+Routes --> RProject : "Route to Project"
+Routes --> RGallery : "Route to Gallery"
+Routes --> RVideoGallery : "Route to VideoGallery"
+Routes --> RContact : "Route to Contact"
+
+RBlog --> Blog
+Blog --> PhotoLinks
+PhotoLinks --> "Businessshot Page" : LBizShot
+PhotoLinks --> "Aestheticshot Page" : LAestheticShot
+PhotoLinks --> "Reflectsshot Page" : LReflectsShot
+
+@enduml
