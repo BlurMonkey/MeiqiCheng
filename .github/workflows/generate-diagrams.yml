@@ -1,0 +1,41 @@
+name: Generate UML Diagrams
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate-diagrams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Install PlantUML
+        run: sudo apt-get install -y plantuml
+
+      - name: Generate UML Diagrams
+        run: |
+          mkdir -p diagrams/out
+          plantuml -tpng -o diagrams/out diagrams/*.puml
+
+      - name: Commit and Push Diagrams
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add diagrams/out/*.png
+          git commit -m "Update UML diagrams"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
