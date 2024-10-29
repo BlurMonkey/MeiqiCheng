@@ -30,7 +30,10 @@ jobs:
           mkdir -p diagrams/out
           plantuml -tpng -o diagrams/out diagrams/*.puml
 
-      - name: List output files
+      - name: List files in diagrams
+        run: ls -la diagrams
+
+      - name: List files in diagrams/out
         run: ls -la diagrams/out
 
       - name: Commit and Push Diagrams
