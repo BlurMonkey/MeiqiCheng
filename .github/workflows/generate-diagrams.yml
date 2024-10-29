@@ -30,12 +30,20 @@ jobs:
           mkdir -p diagrams/out
           plantuml -tpng -o diagrams/out diagrams/*.puml
 
+      - name: List output files
+        run: ls -la diagrams/out
+
       - name: Commit and Push Diagrams
+        if: success()
         run: |
           git config --local user.email "github-actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add diagrams/out/*.png
-          git commit -m "Update UML diagrams"
-          git push
+          if [ "$(ls -A diagrams/out/*.png 2>/dev/null)" ]; then
+            git add diagrams/out/*.png
+            git commit -m "Update UML diagrams"
+            git push
+          else
+            echo "No new diagrams to commit"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
