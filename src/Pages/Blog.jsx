@@ -52,7 +52,7 @@ function Blog() {
       </div>
           
       <div className="blog">
-        <h3>Movie still</h3>
+        <h3>Set photos</h3>
         <div className='blog-stack'>
           <img className='photo4' src={pic1} alt='pic1'/>
           <img className='photo5' src={pic2} alt='pic2'/>
