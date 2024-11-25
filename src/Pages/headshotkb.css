@@ -1,9 +1,43 @@
 .center{
-    text-align: center;
+    display: flex;
+    height: auto;
+    padding: 0 4rem;
+}
+
+.headshot{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.center-right h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.center-right p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 
-.headpic1{
-    width: 50%;
-    align-items: center;
+.center-left img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .headshot{
+      grid-template-columns: repeat(1,1fr);
+    }
+    
+  }
+  
