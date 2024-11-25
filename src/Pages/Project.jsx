@@ -20,7 +20,7 @@ function Project() {
 
         <h2>Shooting Summary</h2>
         <p>
-        This micro film lasts about 2 minutes, the shooting period is daytime, and a lot of equipment is used.
+        This micro film l\is daytime, and a lot of equipment is used.
         </p>
       </div>
     </div>
