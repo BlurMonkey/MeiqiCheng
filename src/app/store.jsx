@@ -6,6 +6,6 @@ import usersReducer from '../features/users/usersSlice.jsx';
 export const store = configureStore({
     reducer: {
         posts: postsReducer,
-        users: usersReducer,
+        users: usersReducer
     }
 })

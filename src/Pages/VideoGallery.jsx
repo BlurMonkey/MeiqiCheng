@@ -12,9 +12,9 @@ function VideoGallery() {
 
   // An array of video URLs for the gallery
   const videos = [
-    video3,
-    video2,
     video1,
+    video2,
+    video3,
     // Add more video URLs as needed
   ];
 
