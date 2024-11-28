@@ -1,9 +1,8 @@
-import './Chat.css';
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-
+import './Chat.css';
 // Dispatcher
-const socket = io.connect('http://localhost:5174'); // Establishes connection to the server
+const socket = io.connect('http://localhost:5173'); // Establishes connection to the server
 
 // View
 // This React component serves as the View in the Flux architecture
@@ -13,11 +12,9 @@ const Chat = () => {
     const [chat, setChat] = useState([]);
 
     // Action
-
     // This function acts as an Action creator, dispatching an action (sending a chat message)
     const sendChat = (e) => {
         e.preventDefault();
-        if (!message.trim()) return; // Prevent sending empty messages
         const chatMessage = { message }; // Structure the message as needed
         socket.emit('chat', chatMessage); // Emitting an event here is similar to dispatching an action in Flux
         setChat((prevChat) => [...prevChat, chatMessage]); // Updating state based on the action, part of the Store's role
@@ -35,28 +32,25 @@ const Chat = () => {
             socket.off('chat', receiveChat); // Cleanup mirrors removing a listener from a Store
         };
     }, []);
-
     // The render method here serves as the View, displaying the application's state to the user
     return (
-        <div className="chat-container">
-            <form onSubmit={sendChat} className="chat-form">
+        <div className='chat-conatiner'>
+            <form onSubmit={sendChat} className='chat-form'>
                 <input
                     type="text"
                     name="chat"
                     placeholder="Type your message here..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="chat-input"
+                    className='chat-input'
                 />
-                <button type="submit" className="chat-button">Send</button>
+                <button type="submit" className='chat-button'>Send</button>
             </form>
-            <div className="chat-messages">
-                {chat.map((payload, index) => (
-                    <p key={index} className="chat-message">{payload.message}</p> // Displaying chat messages
-                ))}
-            </div>
+            {chat.map((payload, index) => (
+                <p className='chat-message' key={index}>{payload.message}</p> // Displaying chat messages, part of the View's responsibility
+            ))}
         </div>
     );
-};
+}
 
 export default Chat;

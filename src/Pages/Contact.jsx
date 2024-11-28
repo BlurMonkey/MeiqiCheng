@@ -1,4 +1,5 @@
 import './Contact.css';
+import Chat from '../Pages/chat/Chat.jsx';
 
 function Contact() {
   return (
@@ -13,6 +14,7 @@ function Contact() {
         <h2>Mobile Number</h2>
         <p>+353 0838525724</p>
       </div>
+      <Chat />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
 import reactLogo from './assets/logo.png';
+import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
 import Blog from './Pages/Blog.jsx';
 import Education from './Pages/Education.jsx';
@@ -21,7 +22,7 @@ function App() {
         <nav className="navbar">
           <div className="navbar-logo">
             <div className="logo-container">
-              <Link to="/about" >
+              <Link to="/MeiqiCheng" >
                 <img src={reactLogo} alt="React Logo" className="logo react-logo" />
               </Link>
             </div>
@@ -39,6 +40,7 @@ function App() {
 
       <main className='container'>
         <Routes>
+          <Route path="/MeiqiCheng" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog/>}/>
           <Route path="/education" element={<Education />}/>
