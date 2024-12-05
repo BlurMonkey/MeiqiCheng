@@ -32,7 +32,7 @@ function VideoGallery() {
     <div className="video-gallery-container">
       <header className="video-gallery-header">
         <h1>Video Gallery</h1>
-        <p>Explore our collection of videos showcasing various topics and projects.</p>
+        <p>Browse through my collection of videos showcasing various topics and projects.</p>
       </header>
       {/* Display the current video */}
       <video

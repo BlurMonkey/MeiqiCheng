@@ -34,7 +34,7 @@ const ImageGallery = () => {// defining a React functional component in TypeScri
     <div className="gallery-container">
       <header className="gallery-header">
         <h1>Image Gallery</h1>
-        <p>Explore my collection of images showcasing various topics and projects.</p>
+        <p>Browse through my collection of images showcasing various topics and projects.</p>
       </header>
       {/* Display the current image */}
       <img

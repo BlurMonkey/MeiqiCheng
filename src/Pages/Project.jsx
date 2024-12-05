@@ -3,7 +3,7 @@ import './Project.css';
 function Project() {
   return (
     <div className="project-container">
-        <h2>Mission overview</h2>
+        <h2>Project Contribution</h2>
         <p>
         My role in the filming team is the director. My responsibilities are as follows:
 

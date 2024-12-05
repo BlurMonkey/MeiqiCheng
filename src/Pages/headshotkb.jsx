@@ -9,7 +9,7 @@ function Businessshot() {
           <img src={headpic} alt="pic1"/>
         </div>
         <div className="center-right">
-          <h1 className="headshot-title">Headshot</h1>
+          <h1 className="headshot-title">Formal 'business-type' headshot</h1>
               <p>
                 This headshot was taken against the white background of the dormitory, using natural light and lights from the Windows as the main source of light. Due to the focal length (35mm), the face is slightly deformed, and the middle part appears more prominent, 
                 but the overall facial features are clear. Due to some imperfections in the makeup during the shooting, Photoshop was used to retouch and adjust the overall brightness and size.

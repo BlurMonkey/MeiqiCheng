@@ -1,9 +1,6 @@
 import meiqiLogo from '../assets/1_headshot.jpg';
 import './About.css'
 
-
-
-
 function About() {
     return (
       <main className="container">
