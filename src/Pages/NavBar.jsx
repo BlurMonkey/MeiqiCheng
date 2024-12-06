@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
+
+// Import Link component from React Router for navigation
+
 function NavBar() {
   return (
+    // Navigation bar container
     <nav>
+      {/* Navigation list */}
       <ul className="navbar">
+        {/* Navigation logo section */}
         <div className="navbar-logo">
         </div>
+       {/* Navigation links */}
         <li><Link to="/about">About</Link></li>
         <li><Link to="/project">Project</Link></li>
         <li><Link to="/blog">Blog</Link></li>

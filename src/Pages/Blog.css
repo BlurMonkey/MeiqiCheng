@@ -1,9 +1,10 @@
-
+/* Blog Title Styles */
 .blog-title h2{
     font-size: 30px;
     text-align: center;
 }
 
+/* Blog Container Styles */
 .blog-container{
   width: 100%;
   display: flex;
@@ -11,6 +12,7 @@
   align-items: center;
 }
 
+/* Blog Section Styles */
 .blog{
     width: 100%;
     margin-bottom: 2rem;
@@ -20,30 +22,33 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
 }
 
-
+/* Blog Heading Styles */
 .blog h3 {
   font-size: 1.5rem; /* Set font size for project card headings */
   color: #007bff; /* Set heading color to blue */
 }
 
+/* Blog Grid Layout */
 .blog-card {
     display: grid;
     grid-template-columns: repeat(3 , minmax(200px, 1fr));
     gap: 10px;
 }
 
+/* Photo Styling */
 .blog-photo{
   text-align: center;
   padding-bottom: 1rem;
 
 }
 
+/* Blog Image Text */
 .blog-container .text{
   font-size: 15px;
 }
 
 
-
+/* First Blog Image */
 .blog-photo1 img {
     width: 100%; /* Adjust the size as needed */
     height: 400px;
@@ -53,6 +58,8 @@
     object-position: center;
   }
 
+
+/* Second Blog Image */
 .blog-photo2 img{
     width: 100%;
     height: 400px;
@@ -63,6 +70,7 @@
     object-position: 60%;
   }
 
+  /* Third Blog Image */
 .blog-photo3 img{
     width: 100%;
     height: 400px;
@@ -80,12 +88,12 @@
     border-radius: 8px;
 }
 
-
 .photo p{
    font-size: 1rem;
 
 }
 
+/* Blog Stack Layout */
 .blog-stack{
   width: 100%;
   display: grid;
@@ -94,7 +102,7 @@
   border-radius: 8px; /* Round the corners of the card */
 }
 
-
+/* Fourth Image Styles */
 .photo4 {
   width: 100%;
   height: 200px;
@@ -104,6 +112,7 @@
 
 }
 
+/* Fifth Image Styles */
 .photo5 {
   width: 100%;
   height: 200px;

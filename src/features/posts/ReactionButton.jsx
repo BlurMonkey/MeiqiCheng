@@ -3,6 +3,9 @@ import React from "react";
 import { reactionAdded } from "./postSlice.jsx";
 import './PostList.css';
 
+// Import Redux's useDispatch hook for dispatching actions and the style file
+
+// Define a mapping of reaction names to emojis
 const reactionEmoji = {
     thumbsUp: '👍',
     wow: '😮',
@@ -12,8 +15,8 @@ const reactionEmoji = {
 }
 
 const ReactionButtons = ({ post }) => {
-    const dispatch = useDispatch();
-
+    const dispatch = useDispatch(); // Get the dispatch function
+    // Iterate over the reaction emojis and generate buttons
     const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => {
         // Correct typing for the reaction name
 
@@ -31,7 +34,7 @@ const ReactionButtons = ({ post }) => {
         );
     });
 
-    return <div>{reactionButtons}</div>;
+    return <div>{reactionButtons}</div>;  // Return the generated buttons
 };
 
 export default ReactionButtons;

@@ -1,15 +1,18 @@
+/* Post list title styling */
 .postsListContainer h2{
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
+/* Grid layout for the post list */
 .postsList{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
+/* Styling for posts */
 .postsList article{
     background-color: #fff;
     border-radius: 10px;
@@ -18,22 +21,26 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Styling for hover state of posts */
 .postsList article:hover{
     transform: translateY(-5px);
 }
 
+/* Styling for post titles */
 .postsList article h3{
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
+/* Styling for post paragraph text */
 .postsList article p{
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
+/* Styling for post links */
 .postsList article a{
     display: inline-block;
     background-color: #007bff;
@@ -42,6 +49,7 @@
     border-radius: 5px;
 }
 
+/* Styling for buttons */
 .postsList button{
     all: unset;
     padding: 0 10px;

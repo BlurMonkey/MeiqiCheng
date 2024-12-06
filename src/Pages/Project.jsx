@@ -1,7 +1,10 @@
 import './Project.css';
 
+// Import the styles for the Project component
+
 function Project() {
   return (
+    // Container section
     <div className="project-container">
         <h2>Project Contribution</h2>
         <p>

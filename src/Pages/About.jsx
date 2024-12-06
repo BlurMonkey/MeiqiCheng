@@ -1,13 +1,18 @@
 import meiqiLogo from '../assets/1_headshot.jpg';
 import './About.css'
 
+// Import necessary resources, including profile photo and stylesheet
+
 function About() {
     return (
       <main className="container">
+        {/* Personal Information Section */}
         <section id="hero" className="hero">
           <div className="profile-info">
+            {/* Display profile photo */}
             <img src={meiqiLogo} alt="Meiqi Cheng" className="profile-photo" ></img>
             <div>
+              {/* Basic personal details */}
               <h1>Meiqi Cheng</h1>
               <span>Student at University of Limerick</span><br />
               <span>Major of Interaction of Experience Design </span><br />
@@ -15,6 +20,7 @@ function About() {
           </div>
         </section>
 
+      {/* About Me Section */}
         <section id="about-me" className="about-me">
           <h2>About me</h2>
           <span>

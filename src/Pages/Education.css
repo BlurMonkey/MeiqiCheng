@@ -1,4 +1,4 @@
-  /* Education*/
+  /* Education container*/
   .Education-container {
     min-height: 10vh; /* Ensures the container takes the full height of the viewport */
     background-color: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -6,18 +6,21 @@
     padding: 30px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
   }
-  
+
+  /* title styling */
   #education h2 {
     color: #333;
     text-align: center;
   }
   
+  /* paragraph text styling */
   .Education-container p {
     color: #555;
     font-size: 1.1rem;
     text-align: center;
   }
 
+  /* Additional information styling */
 #education span{
     display: flex;
     text-align: justify;

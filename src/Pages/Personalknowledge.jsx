@@ -1,7 +1,10 @@
 import "./Personalknowledge.css";
 
+// Import styles for the Personal Knowledge component
+
 function Personalknowledge() {
   return (
+    // Personal knowledge container section
     <div id="personalknowledge"className="Personalknowledge-container">
         <h2>Personal knowledge </h2>
         <h4>Tool</h4>

@@ -15,13 +15,17 @@ import Project from '../Pages/Project.jsx';
 import PostsList from '../features/posts/PostList.jsx';
 import AddPostForm from '../features/posts/AddPostForm.jsx'
 
+// Import styles, image assets, and additional components
+
 function Blog() {
   return (
     <section id="blog" className="blog-container">
+      {/* Blog title */}
       <h2 className='blog-title'> Meiqi Cheng Blog</h2>
       <div className="blog"> {/* Grid for displaying project cards */}
         <h3>Photos</h3>
         <div className="blog-card"> {/* Project 1 card */}
+           {/* Project 1 card: Formal headshot */}
           <div className='blog-box'>
             <div className="blog-photo1">
               <Link to="/headpic">
@@ -30,7 +34,8 @@ function Blog() {
               </Link>
             </div>  
           </div>
-              
+
+          {/* Project 2 card: Aesthetic photo */}
           <div className='blog-box'>
             <div className="blog-photo2">
               <Link to="/aestheticpic">
@@ -40,6 +45,7 @@ function Blog() {
             </div>
           </div>
 
+          {/* Project 3 card: Passion-reflecting image */}
           <div className='blog-box'>
             <div className="blog-photo3">
               <Link to="/reflectspic">
@@ -50,7 +56,8 @@ function Blog() {
           </div>
         </div>
       </div>
-          
+      
+      {/* Collection of additional set photos */}
       <div className="blog">
         <h3>Set photos</h3>
         <div className='blog-stack'>

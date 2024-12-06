@@ -1,5 +1,5 @@
 /* VideoGallery.css */
-
+/* Main container for the video gallery */
 .video-gallery-container {
     max-width: 800px;
     margin: 0 auto;
@@ -10,6 +10,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
+  /* Header section*/
   .video-gallery-header {
     margin-bottom: 20px;
   }
@@ -24,6 +25,7 @@
     font-size: 1rem;
   }
   
+  /* Video player styling */
   .video-player {
     width: 100%;
     max-height: 500px;
@@ -32,6 +34,7 @@
     margin-bottom: 20px;
   }
   
+  /* Button container styling */
   .video-gallery-buttons {
     display: flex;
     justify-content: center;
@@ -39,6 +42,7 @@
     margin-top: 20px;
   }
   
+/* Button styling */
   .video-gallery-button {
     padding: 10px 20px;
     background-color: #333;

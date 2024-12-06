@@ -1,15 +1,17 @@
-
+/*  Container styling */
 .reflect{
     width: 100%;
     height: 100%;
     padding: 0 10px;
 }
 
+/* Styling for the outer container of the image */
 .reflectspic1{
     margin: 0 auto;
     display: flex;
 }
 
+/* Styling for the image */
 .reflect img{
     width: 60%;
     height: auto;
@@ -17,13 +19,14 @@
     object-fit: cover;
 }
 
-
+/* Styling for the title */
 .reflect h1{
     font-size: 30px;
     font-weight: 700;
     text-align: center;
 }
 
+/* Styling for the paragraph text */
 .reflect p{
     font-size: 20px;
     text-align: justify;
